@@ -1,279 +1,229 @@
-# TagStudio (Preview/Alpha): A User-Focused Document Management System
-
-<p align="center">
-  <img width="60%" src="github_header.png">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagStudio（预览版/Alpha）：以用户为中心的文档管理系统</font></font></h1><a id="user-content-tagstudio-previewalpha-a-user-focused-document-management-system" class="anchor" aria-label="永久链接：TagStudio（预览版/Alpha 版）：以用户为中心的文档管理系统" href="#tagstudio-previewalpha-a-user-focused-document-management-system"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="/CyanVoxel/TagStudio/blob/main/github_header.png"><img width="60%" src="/CyanVoxel/TagStudio/raw/main/github_header.png" style="max-width: 100%;"></a>
 </p>
-
-> [!CAUTION]
-> This is still a **_very_** rough personal project of mine in its infancy. I’m open-sourcing it now in order to accept contributors sooner and to better facilitate the direction of the project from an earlier stage.
-> There **_are_** bugs, and there will **_very likely_** be breaking changes!
-
-TagStudio is a photo & file organization application with an underlying system that focuses on giving freedom and flexibility to the user. No proprietary programs or formats, no sea of sidecar files, and no complete upheaval of your filesystem structure.
-
-<p align="center">
-  <img width="80%" src="screenshot.jpg">
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这仍然是</font><font style="vertical-align: inherit;">我的一个</font></font><strong><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非常</font></font></em></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">粗糙的个人项目，还处于起步阶段。我现在将其开源，以便更快地接受贡献者，并更好地促进项目早期阶段的方向。存在</font></font><strong><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误</font></font></em></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并且</font></font><strong><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">很可能</font></font></em></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会发生重大更改！</font></font></p>
+</div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagStudio 是一款照片和文件组织应用程序，其底层系统专注于为用户提供自由和灵活性。没有专有程序或格式，没有大量的 sidecar 文件，也没有文件系统结构的彻底改变。</font></font></p>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="/CyanVoxel/TagStudio/blob/main/screenshot.jpg"><img width="80%" src="/CyanVoxel/TagStudio/raw/main/screenshot.jpg" style="max-width: 100%;"></a>
 </p>
-
-## Contents
-- [Goals](#goals)
-- [Priorities](#priorities)
-- [Current Features](#current-features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [FAQ](#faq)
-
-## Goals
-
-- To achieve a portable, privacy-oriented, open, extensible, and feature-rich system of organizing and rediscovering files.
-- To provide powerful methods for organization, notably the concept of tag composition, or “taggable tags”.
-- To create an implementation of such a system that is resilient against a user’s actions outside the program (modifying, moving, or renaming files) while also not burdening the user with mandatory sidecar files or otherwise requiring them to change their existing file structures and workflows.
-- To support a wide range of users spanning across different platforms, multi-user setups, and those with large (several terabyte) libraries.
-- To make the darn thing look like nice, too. It’s 2024, not 1994.
-
-## Priorities
-
-1. **The concept.** Even if TagStudio as a project or application fails, I’d hope that the idea lives on in a superior project. The [goals](#goals) outlined above don’t reference TagStudio once - _TagStudio_ is what references the _goals._
-2. **The system.** Frontends and implementations can vary, as they should. The core underlying metadata management system is what should be interoperable between different frontends, programs, and operating systems. A standard implementation for this should settle as development continues. This opens up the doors for improved and varied clients, integration with third-party applications, and more.
-3. **The application.** If nothing else, TagStudio the application serves as the first (and so far only) implementation for this system of metadata management. This has the responsibility of doing the idea justice and showing just what’s possible when it comes to user file management.
-4. (The name.) I think it’s fine for an app or client, but it doesn’t really make sense for a system or standard. I suppose this will evolve with time.
-
-## Current Features
-
-- Create libraries/vaults centered around a system directory. Libraries contain a series of entries: the representations of your files combined with metadata fields. Each entry represents a file in your library’s directory, and is linked to its location.
-- Add metadata to your library entries, including:
-  - Name, Author, Artist (Single-Line Text Fields)
-  - Description, Notes (Multiline Text Fields)
-  - Tags, Meta Tags, Content Tags (Tag Boxes)
-- Create rich tags composed of a name, a list of aliases, and a list of “subtags” - being tags in which these tags inherit values from.
-- Search for entries based on tags, metadata, or filename (using `filename: <query>`)
-- Special search conditions for entries that are: `untagged`/`no tags` and `empty`/`no fields`.
-
-> [!NOTE]
-> For more information on the project itself, please see the [FAQ](#faq) section and other docs.
-
-## Installation
-> [!CAUTION]
-> TagStudio is only currently verified to work on Windows. I've run into issues with the Qt code running on Linux, but I don't know how severe these issues are. There's also likely bugs regarding filenames and portability of the databases across different OSes.
-
-### Prerequisites
-
-- Python 3.12
-
-### Creating the Virtual Environment
-
-*Skip this step if launching from the .sh script on Linux.*
-
-1. In the root repository directory, create a python virtual environment:  
-   `python3 -m venv .venv`
-2. Activate your environment:
-
-- Windows w/Powershell: `.venv\Scripts\Activate.ps1`
-- Windows w/Command Prompt: `.venv\Scripts\activate.bat`
-- Linux/macOS: `source .venv/bin/activate`
-
-3. Install the required packages:  
-   `pip install -r requirements.txt`
-
-_Learn more about setting up a virtual environment [here](https://docs.python.org/3/tutorial/venv.html)._
-
-### Launching
-
-> [!NOTE]
-> Depending on your system, Python may be called `python`, `py`, `python3`, or `py3`. These instructions use the alias `python3`. 
-
-#### Optional Arguments
-
-> `--open <path>` / `-o <path>`
-> Path to a TagStudio Library folder to open on start.
-
-#### Windows
-
-To launch TagStudio, launch the `start_win.bat` file. You can modify this .bat file or create a shortcut and add one or more additional arguments if desired.
-
-Alternatively, with the virtual environment loaded, run the python file at `tagstudio\tag_studio.py` from your terminal. If you're in the project's root directory, simply run `python3 tagstudio/tag_studio.py`.
-
-> [!CAUTION]
-> TagStudio on Linux & macOS likely won't function correctly at this time. If you're trying to run this in order to help test, debug, and improve compatibility, then charge on ahead!
-
-#### macOS
-
-With the virtual environment loaded, run the python file at "tagstudio/tag_studio.py" from your terminal. If you're in the project's root directory, simply run `python3 tagstudio/tag_studio.py`. When launching the program in the future, remember to activate the virtual environment each time before launching *(an easier method is currently being worked on).*
-
-#### Linux
-
-Run the "TagStudio.sh" script, and the program should launch! (Make sure that the script is marked as executable). Note that launching from the script from outside of a terminal will not launch a terminal window with any debug or crash information. If you wish to see this information, just launch the shell script directly from your terminal with `sh TagStudio.sh`.
-
-##### NixOS
-
-Use the provided `flake.nix` file to create and enter a working environment by running `nix develop`. Then, run the above `TagStudio.sh` script.
-
-## Usage
-
-### Creating/Opening a Library
-
-With TagStudio opened, start by creating a new library or opening an existing one using File -> Open/Create Library from the menu bar. TagStudio will automatically create a new library from the chosen directory if one does not already exist. Upon creating a new library, TagStudio will automatically scan your folders for files and add those to your library (no files are moved during this process!).
-
-### Refreshing the Library
-
-In order to scan for new files or file changes, you’ll need to manually go to File -> Refresh Directories.
-
-> [!NOTE]
-> In the future, library refreshing will also be automatically done in the background, or additionally on app startup.
-
-### Adding Metadata to Entries
-
-To add a metadata field to a file entry, start by clicking the “Add Field” button under the file preview in the right-hand preview panel. From the dropdown menu, select the type of metadata field you’d like to add to the entry.
-
-### Editing Metadata Fields
-
-#### Text Line / Text Box
-
-Hover over the field and click the pencil icon. From there, add or edit text in the dialog box popup.
-
-#### Tag Box
-
-Click the “+” button at the end of the Tags list, and search for tags to add inside the new dialog popup. Click the “+” button next to whichever tags you want to add. Alternatively, after you search for a tag, press the Enter/Return key to add the add the first item in the list. Press Enter/Return once more to close the dialog box
-
-> [!WARNING]
-> Keyboard control and navigation is currently _very_ buggy, but will be improved in future versions.
-
-### Creating Tags
-
-To create a new tag, click on Edit -> New Tag from the menu bar. From there, enter a tag name, shorthand name, any tag aliases separated by newlines, any subtags, and an optional color.
-
-- The tag **shorthand** is a type of alias that displays in situations when screen space is more valuable (ex. as a subtag for other tags).
-- **Aliases** are alternate names for a tag. These let you search for terms other than the exact tag name in order to find the tag again.
-- **Subtags** are tags in which this tag is a child tag of. In other words, tags under this section are parents of this tag. For example, if you had a tag for a character from a show, you would make the show a subtag of this character. This would display as “Character (Show)” in most areas of the app. The first tag in this list is used as the tag shown in parentheses for specification.
-- The **color** dropdown lets you select an optional color for this tag to display as.
-
-### Editing Tags
-
-To edit a tag, right-click the tag in the tag field of the preview pane and select “Edit Tag”
-
-> [!WARNING]
-> There is currently no method to view all tags that you’ve created in your library. This is a top priority for future releases.
-
-### Relinking Renamed/Moved Files
-
-Inevitably, some of the files inside your library will be renamed, moved, or deleted. If a file has been renamed or moved, TagStudio will display the thumbnail as a red tag with a cross through it _(this icon is also used for items with broken thumbnails)._ To relink moved files or delete these entries, go to Tools -> Manage Unlinked Entries. Click the “Refresh” button to scan your library for unlinked entries. Once complete, you can attempt to “Search & Relink” any unlinked entries to their respective files, or “Delete Unlinked Entries” in the event the original files have been deleted and you no longer wish to keep their metadata entries inside your library.
-
-> [!WARNING]
-> There is currently no method to relink entries to files that have been renamed - only moved or deleted. This is a top priority for future releases.
-
-> [!WARNING]
-> If multiple matches for a moved file are found (matches are currently defined as files with a matching filename as the original), TagStudio will currently ignore the match groups. Adding a GUI for manual selection, as well as smarter automated relinking, are top priorities for future versions.
-
-### Saving the Library
-
-Libraries are saved upon exiting the program. To manually save, select File -> Save Library from the menu bar. To save a backup of your library, select File -> Save Library Backup from the menu bar.
-
-### Half-Implemented Features
-
-#### Fix Duplicate Files
-
-Load in a .dupeguru file generated by [dupeGuru](https://github.com/arsenetar/dupeguru/) and mirror metadata across entries marked as duplicates. After mirroring, return to dupeGuru to manage deletion of the duplicate files. After deletion, use the “Fix Unlinked Entries” feature in TagStudio to delete the duplicate set of entries for the now-deleted files
-
-> [!CAUTION]
-> While this feature is functional, it’s a pretty roundabout process and can be streamlined in the future.
-
-#### Image Collage
-
-Create an image collage of your photos and videos.
-
-> [!CAUTION]
-> Collage sizes and options are hardcoded.
-
-#### Macros
-
-Apply tags and other metadata automatically depending on certain criteria. Set specific macros to run when the files are added to the library. Part of this includes applying tags automatically based on parent folders.
-
-> [!CAUTION]
-> Macro options are hardcoded, and there’s currently no way for the user to interface with this (still incomplete) system at all.
-
-#### Gallery-dl Sidecar Importing
-
-Import JSON sidecar data generated by [gallery-dl](https://github.com/mikf/gallery-dl).
-
-> [!CAUTION]
-> This feature is not supported or documented in any official capacity whatsoever. It will likely be rolled-in to a larger and more generalized sidecar importing feature in the future.
-
-## FAQ
-
-### What State Is the Project Currently In?
-
-As of writing (Alpha v9.1.0) the project is in a “useable” state, however it lacks proper testing and quality of life features. Currently the program has only been verified to work properly on Windows, and is unlikely to properly run on Linux or macOS in its current state, however this functionality is a priority going forward with testers.
-
-### What Features Are You Planning on Adding?
-
-Of the several features I have planned for the project, these are broken up into “priority” features and “future” features. Priority features were originally intended for the first public release, however are currently absent from the Alpha v9.x.x builds.
-
-#### Priority Features
-
-- Improved search
-  - Sortable Search
-  - Boolean Search
-  - Coexisting Text + Tag Search
-  - Searchable File Metadata
-- Tag management view
-- Applying metadata via multi-selection
-- Easier ways to apply tags in bulk
-  - Tag Search Panel
-  - Recent Tags Panel
-  - Top Tags Panel
-  - Pinned Tags Panel
-- Apply tags based on system folders
-- Better (stable, performant) library grid view
-- Improved entry relinking
-- Cached thumbnails
-- Collations
-- Resizable thumbnail grid
-- User-defined metadata fields
-- Multiple directory support
-- SQLite (or similar) save files
-- Reading of EXIF and XMP fields
-- Improved UI/UX
-- Better internal API for accessing Entries, Tags, Fields, etc. from the library.
-- Proper testing workflow
-- Continued code cleanup and modularization
-- Reassessment of save file structure in order to prioritize portability (leading to exportable tags, presets, etc)
-
-#### Future Features
-
-- Support for multiple simultaneous users/clients
-- Draggable files outside the program
-- Ability to ignore specific files
-- A finished “macro system” for automatic tagging based on predetermined criteria.
-- Different library views
-- Date and time fields
-- Entry linking/referencing
-- Audio waveform previews
-- 3D object previews
-- Additional previews for miscellaneous file types
-- Exportable/sharable tags and settings
-- Optional global tags and settings, spanning across libraries
-- Importing & exporting libraries to/from other programs
-- Port to a more performant language and modern frontend (Rust?, Tauri?, etc.)
-- Plugin system
-- Local OCR search
-- Support for local machine learning-based tag suggestions for images
-- Mobile version
-
-#### Features I Likely Won’t Add/Pull
-- Native Cloud Integration 
-  - There are plenty of services already (native or third-party) that allow you to mount your cloud drives as virtual drives on your system. Pointing TagStudio to one of these mounts should function similarly to what native integration would look like.
-- Native ChatGPT/Non-Local LLM Integration
-  - This could mean different things depending on what you're intending. Whether it's trying to use an LLM to replace the native search, or to trying to use a model for image recognition, I'm not interested in hooking people's TagStudio libraries into non-local LLMs such as ChatGPT and/or turn the program into a "chatbot" interface (see: [Goals/Privacy](#goals)). I wouldn't, however, mind using **locally** hosted models to provide the *optional* ability for additional searching and tagging methods (especially when it comes to facial recognition).
-
-### Why Is the Version Already v9?
-
-I’ve been developing this project over several years in private, and have gone through several major iterations and rewrites in that time. This “major version” is just a number at the end of the day, and if I wanted to I couldn’t released this as “Version 0” or “Version 1.0”, but I’ve decided to stick to my original version numbers to avoid needing to go in and change existing documentation and code comments. Version 10 is intended to include all of the “Priority Features” I’ve outlined in the [previous](#what-features-are-you-planning-on-adding) section. I’ve also labeled this version as an Alpha, and will likely reset the numbers when a feature-complete beta is reached.
-
-### Wait, Is There a CLI Version?
-
-As of right now, no. However, I _did_ have a CLI version in the recent past before dedicating my efforts to the Qt GUI version. I’ve left in the currently-inoperable CLI code just in case anyone was curious about it. Also yes, it’s just a bunch of glorified print statements (_the outlook for some form of curses on Windows didn’t look great at the time, and I just needed a driver for the newly refactored code...)._
-
-### Can I Contribute?
-
-**Yes!!** I recommend taking a look at the [Priority Features](#priority-features), [Future Features](#future-features), and [Features I Won't Pull](#features-i-likely-wont-addpull) lists, as well as the project issues to see what’s currently being worked on. Please do not submit pull requests with new feature additions without opening up an issue with a feature request first.
-
-As of writing I don’t have a concrete style guide, just try to stay within or close enough to the PEP 8 style guide and/or match the style of the existing code.
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></h2><a id="user-content-contents" class="anchor" aria-label="永久链接： 内容" href="#contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="#goals"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目标</font></font></a></li>
+<li><a href="#priorities"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优先事项</font></font></a></li>
+<li><a href="#current-features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前的特点</font></font></a></li>
+<li><a href="#installation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+<li><a href="#usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></a></li>
+<li><a href="#faq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目标</font></font></h2><a id="user-content-goals" class="anchor" aria-label="永久链接：目标" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现一个可移植、注重隐私、开放、可扩展且功能丰富的文件组织和重新发现系统。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供强大的组织方法，特别是标签组合或“可标记标签”的概念。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建这样一个系统的实现，该系统能够抵御用户在程序之外的操作（修改、移动或重命名文件），同时不会给用户带来强制附加文件的负担，也不会要求他们更改现有的文件结构和工作流程。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持跨不同平台、多用户设置以及拥有大型（数 TB）库的广泛用户。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让这该死的东西看起来也不错。现在是 2024 年，而不是 1994 年。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优先事项</font></font></h2><a id="user-content-priorities" class="anchor" aria-label="永久链接：优先事项" href="#priorities"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这个概念。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">即使 TagStudio 作为一个项目或应用程序失败了，我也希望这个想法能够在一个优秀的项目中继续存在。上面概述</font></font><a href="#goals"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的目标</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不会</font><font style="vertical-align: inherit;">引用 TagStudio 一次 - </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagStudio</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">才是引用目标的对象</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></em></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前端和实现可以有所不同，正如它们应该的那样。元数据管理系统的核心底层应该是不同前端、程序和操作系统之间的互操作性。随着开发的继续，这个标准的实现应该得到解决。这为改进和多样化的客户端、与第三方应用程序的集成等打开了大门。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果不出意外的话，TagStudio 应用程序将成为该元数据管理系统的第一个（也是迄今为止唯一一个）实现。这有责任公正地表达这个想法，并展示用户文件管理方面的可能性。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（名称。）我认为这对于应用程序或客户端来说很好，但对于系统或标准来说并没有真正意义。我想这会随着时间的推移而发展。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前的特点</font></font></h2><a id="user-content-current-features" class="anchor" aria-label="永久链接：当前功能" href="#current-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建以系统目录为中心的库/保管库。库包含一系列条目：文件的表示形式与元数据字段相结合。每个条目代表图书馆目录中的一个文件，并链接到其位置。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将元数据添加到您的库条目，包括：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">姓名、作者、艺术家（单行文本字段）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述、注释（多行文本字段）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签、元标签、内容标签（标签框）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建由名称、别名列表和“子标签”列表组成的丰富标签 - 这些标签从中继承值。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据标签、元数据或文件名搜索条目（使用</font></font><code>filename: &lt;query&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">条目的特殊搜索条件是：</font></font><code>untagged</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font><code>no tags</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>empty</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><code>no fields</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关项目本身的更多信息，请参阅</font></font><a href="#faq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题解答</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分和其他文档。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagStudio 目前仅经过验证可在 Windows 上运行。我在 Linux 上运行 Qt 代码时遇到了问题，但我不知道这些问题有多严重。不同操作系统之间的文件名和数据库的可移植性也可能存在错误。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先决条件</font></font></h3><a id="user-content-prerequisites" class="anchor" aria-label="永久链接：先决条件" href="#prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 3.12</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建虚拟环境</font></font></h3><a id="user-content-creating-the-virtual-environment" class="anchor" aria-label="永久链接：创建虚拟环境" href="#creating-the-virtual-environment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果在 Linux 上从 .sh 脚本启动，请跳过此步骤。</font></font></em></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在根存储库目录中，创建python虚拟环境：</font></font><br>
+<code>python3 -m venv .venv</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">激活您的环境：</font></font></li>
+</ol>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带 Powershell 的 Windows：</font></font><code>.venv\Scripts\Activate.ps1</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带命令提示符的 Windows：</font></font><code>.venv\Scripts\activate.bat</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux/macOS：</font></font><code>source .venv/bin/activate</code></li>
+</ul>
+<ol start="3" dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装所需的软件包：</font></font><br>
+<code>pip install -r requirements.txt</code></li>
+</ol>
+<p dir="auto"><em><font style="vertical-align: inherit;"></font><a href="https://docs.python.org/3/tutorial/venv.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解有关设置虚拟环境的更多信息</font><font style="vertical-align: inherit;">。</font></font></em></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发射</font></font></h3><a id="user-content-launching" class="anchor" aria-label="永久链接：启动" href="#launching"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您的系统，Python 可能被称为</font></font><code>python</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>python3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>py3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。这些指令使用别名</font></font><code>python3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选参数</font></font></h4><a id="user-content-optional-arguments" class="anchor" aria-label="永久链接：可选参数" href="#optional-arguments"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto"><code>--open &lt;path&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font><code>-o &lt;path&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+启动时打开的 TagStudio 库文件夹的路径。</font></font></p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视窗</font></font></h4><a id="user-content-windows" class="anchor" aria-label="永久链接：Windows" href="#windows"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要启动 TagStudio，请启动该</font></font><code>start_win.bat</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件。您可以修改此 .bat 文件或创建快捷方式并根据需要添加一个或多个其他参数。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>tagstudio\tag_studio.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，加载虚拟环境后，从终端</font><font style="vertical-align: inherit;">运行 python 文件。</font><font style="vertical-align: inherit;">如果您位于项目的根目录中，只需运行</font></font><code>python3 tagstudio/tag_studio.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux 和 macOS 上的 TagStudio 目前可能无法正常运行。如果您尝试运行它来帮助测试、调试和提高兼容性，那么请继续前进！</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苹果系统</font></font></h4><a id="user-content-macos" class="anchor" aria-label="永久链接：macOS" href="#macos"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加载虚拟环境后，从终端运行“tagstudio/tag_studio.py”中的 python 文件。如果您位于项目的根目录中，只需运行</font></font><code>python3 tagstudio/tag_studio.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.以后启动程序时，记得每次启动前都激活虚拟环境</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（目前正在研究更简单的方法）。</font></font></em></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux</font></font></h4><a id="user-content-linux" class="anchor" aria-label="永久链接：Linux" href="#linux"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行“TagStudio.sh”脚本，程序应该启动！ （确保脚本被标记为可执行）。请注意，从终端外部启动脚本不会启动包含任何调试或崩溃信息的终端窗口。如果您希望查看此信息，只需从终端直接使用 启动 shell 脚本即可</font></font><code>sh TagStudio.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尼克斯操作系统</font></font></h5><a id="user-content-nixos" class="anchor" aria-label="永久链接：NixOS" href="#nixos"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用提供的</font></font><code>flake.nix</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件通过运行创建并进入工作环境</font></font><code>nix develop</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。然后，运行上面的</font></font><code>TagStudio.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">脚本。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></h2><a id="user-content-usage" class="anchor" aria-label="永久链接：用法" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建/打开库</font></font></h3><a id="user-content-creatingopening-a-library" class="anchor" aria-label="永久链接：创建/打开库" href="#creatingopening-a-library"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开 TagStudio 后，首先创建一个新库或使用菜单栏中的“文件”-&gt;“打开/创建库”打开现有库。如果所选目录尚不存在，TagStudio 将自动从所选目录创建一个新库。创建新库后，TagStudio 将自动扫描您的文件夹中的文件并将其添加到您的库中（在此过程中不会移动任何文件！）。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">刷新图书馆</font></font></h3><a id="user-content-refreshing-the-library" class="anchor" aria-label="永久链接：刷新库" href="#refreshing-the-library"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了扫描新文件或文件更改，您需要手动转到“文件”-&gt;“刷新目录”。</font></font></p>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将来，库刷新也将在后台自动完成，或者在应用程序启动时另外完成。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向条目添加元数据</font></font></h3><a id="user-content-adding-metadata-to-entries" class="anchor" aria-label="永久链接：向条目添加元数据" href="#adding-metadata-to-entries"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要将元数据字段添加到文件条目，请首先单击右侧预览面板中文件预览下方的“添加字段”按钮。从下拉菜单中，选择您要添加到条目的元数据字段的类型。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑元数据字段</font></font></h3><a id="user-content-editing-metadata-fields" class="anchor" aria-label="永久链接：编辑元数据字段" href="#editing-metadata-fields"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本行/文本框</font></font></h4><a id="user-content-text-line--text-box" class="anchor" aria-label="固定链接：文本行/文本框" href="#text-line--text-box"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将鼠标悬停在该字段上并单击铅笔图标。从那里，在弹出的对话框中添加或编辑文本。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签盒</font></font></h4><a id="user-content-tag-box" class="anchor" aria-label="永久链接：标签框" href="#tag-box"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击标签列表末尾的“+”按钮，然后搜索要添加到新弹出对话框中的标签。单击要添加的标签旁边的“+”按钮。或者，搜索标签后，按 Enter/Return 键添加列表中的第一项。再次按 Enter/Return 键关闭对话框</font></font></p>
+<div class="markdown-alert markdown-alert-warning" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">键盘控制和导航目前存在</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">很多</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题，但将在未来版本中得到改进。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建标签</font></font></h3><a id="user-content-creating-tags" class="anchor" aria-label="永久链接：创建标签" href="#creating-tags"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要创建新标签，请从菜单栏中单击“编辑”-&gt;“新标签”。从那里，输入标签名称、简写名称、由换行符分隔的任何标签别名、任何子标签和可选颜色。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简写</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一种别名，在屏幕空间更有价值的情况下显示（例如作为其他标签的子标签）。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">别名</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是标签的备用名称。这些使您可以搜索除确切标签名称之外的术语，以便再次找到该标签。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">子标签</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是指该标签是其子标签的标签。换句话说，此部分下的标签是该标签的父标签。例如，如果您有一个节目中某个角色的标签，您可以将该节目设为该角色的子标签。这将在应用程序的大多数区域中显示为“角色（显示）”。该列表中的第一个标签用作括号中显示的标签以进行规范。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">颜色</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉列表</font><font style="vertical-align: inherit;">允许您选择该标签显示的可选颜色。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑标签</font></font></h3><a id="user-content-editing-tags" class="anchor" aria-label="永久链接：编辑标签" href="#editing-tags"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要编辑标签，请右键单击预览窗格标签字段中的标签，然后选择“编辑标签”</font></font></p>
+<div class="markdown-alert markdown-alert-warning" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前无法查看您在库中创建的所有标签。这是未来版本的首要任务。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重新链接重命名/移动的文件</font></font></h3><a id="user-content-relinking-renamedmoved-files" class="anchor" aria-label="永久链接：重新链接重命名/移动的文件" href="#relinking-renamedmoved-files"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不可避免地，库中的某些文件将被重命名、移动或删除。如果文件已被重命名或移动，TagStudio 会将缩略图显示为带有十字的红色标签</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（此图标也用于缩略图损坏的项目）。</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要重新链接移动的文件或删除这些条目，请转至工具 -&gt; 管理未链接的条目。单击“刷新”按钮扫描您的库中是否有未链接的条目。完成后，您可以尝试“搜索并重新链接”任何未链接的条目到其各自的文件，或者如果原始文件已被删除并且您不再希望将其元数据条目保留在库中，则可以“删除未链接的条目”。</font></font></p>
+<div class="markdown-alert markdown-alert-warning" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前没有方法可以将条目重新链接到已重命名的文件 - 只能移动或删除。这是未来版本的首要任务。</font></font></p>
+</div>
+<div class="markdown-alert markdown-alert-warning" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果找到移动文件的多个匹配项（匹配项当前定义为文件名与原始文件名匹配的文件），TagStudio 当前将忽略匹配组。添加用于手动选择的 GUI 以及更智能的自动重新链接是未来版本的首要任务。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保存图书馆</font></font></h3><a id="user-content-saving-the-library" class="anchor" aria-label="永久链接：保存库" href="#saving-the-library"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退出程序时将保存库。要手动保存，请从菜单栏中选择“文件”-&gt;“保存库”。要保存库的备份，请从菜单栏中选择“文件”-&gt;“保存库备份”。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">半实现的功能</font></font></h3><a id="user-content-half-implemented-features" class="anchor" aria-label="永久链接：半实现的功能" href="#half-implemented-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修复重复文件</font></font></h4><a id="user-content-fix-duplicate-files" class="anchor" aria-label="永久链接：修复重复文件" href="#fix-duplicate-files"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加载由</font></font><a href="https://github.com/arsenetar/dupeguru/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dupeGuru</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生成的 .dupeguru 文件，并跨标记为重复的条目镜像元数据。镜像完成后，返回 dupeGuru 管理重复文件的删除。删除后，使用 TagStudio 中的“修复未链接的条目”功能删除现已删除的文件的重复条目集</font></font></p>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">虽然此功能很实用，但这是一个相当迂回的过程，并且可以在将来进行简化。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像拼贴</font></font></h4><a id="user-content-image-collage" class="anchor" aria-label="永久链接：图像拼贴" href="#image-collage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建照片和视频的图像拼贴画。</font></font></p>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拼贴画尺寸和选项是硬编码的。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">宏</font></font></h4><a id="user-content-macros" class="anchor" aria-label="永久链接：宏" href="#macros"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据特定条件自动应用标签和其他元数据。设置将文件添加到库时要运行的特定宏。其中一部分包括根据父文件夹自动应用标签。</font></font></p>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">宏选项是硬编码的，目前用户根本没有办法与这个（仍然不完整的）系统进行交互。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gallery-dl Sidecar 导入</font></font></h4><a id="user-content-gallery-dl-sidecar-importing" class="anchor" aria-label="永久链接：Gallery-dl Sidecar 导入" href="#gallery-dl-sidecar-importing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/mikf/gallery-dl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入由gallery-dl</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生成的 JSON sidecar 数据</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-alert markdown-alert-caution" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此功能不受任何官方支持或记录。未来它可能会被纳入更大、更通用的 sidecar 导入功能中。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></h2><a id="user-content-faq" class="anchor" aria-label="永久链接：常见问题解答" href="#faq"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目目前处于什么状态？</font></font></h3><a id="user-content-what-state-is-the-project-currently-in" class="anchor" aria-label="永久链接：该项目目前处于什么状态？" href="#what-state-is-the-project-currently-in"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截至撰写本文时（Alpha v9.1.0），该项目处于“可用”状态，但缺乏适当的测试和生活质量功能。目前，该程序仅被验证可以在 Windows 上正常运行，在当前状态下不太可能在 Linux 或 macOS 上正常运行，但此功能是测试人员优先考虑的事项。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您计划添加哪些功能？</font></font></h3><a id="user-content-what-features-are-you-planning-on-adding" class="anchor" aria-label="永久链接：您计划添加哪些功能？" href="#what-features-are-you-planning-on-adding"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在我为该项目计划的几个功能中，这些功能被分为“优先”功能和“未来”功能。优先功能最初是为第一个公开版本设计的，但目前 Alpha v9.xx 版本中不存在。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优先特性</font></font></h4><a id="user-content-priority-features" class="anchor" aria-label="永久链接：优先功能" href="#priority-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改进的搜索
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可排序搜索</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔搜索</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">共存的文本+标签搜索</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可搜索的文件元数据</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签管理视图</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过多选应用元数据</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">批量应用标签的更简单方法
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签搜索面板</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最近的标签面板</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">顶部标签面板</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">固定标签面板</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于系统文件夹应用标签</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更好（稳定、高性能）的库网格视图</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改进条目重新链接</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缓存的缩略图</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">校对</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可调整大小的缩略图网格</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户定义的元数据字段</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多目录支持</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLite（或类似的）保存文件</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读取 EXIF 和 XMP 字段</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改进的用户界面/用户体验</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更好的内部 API，用于从库访问条目、标签、字段等。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正确的测试工作流程</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">持续的代码清理和模块化</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重新评估保存文件结构，以优先考虑可移植性（导致可导出的标签、预设等）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未来的特点</font></font></h4><a id="user-content-future-features" class="anchor" aria-label="永久链接：未来的功能" href="#future-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持多个并发用户/客户端</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可在程序外拖动文件</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">能够忽略特定文件</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完成的“宏系统”，用于根据预定标准自动标记。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不同的图书馆景观</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日期和时间字段</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">条目链接/引用</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">音频波形预览</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D 对象预览</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各种文件类型的附加预览</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可导出/可共享的标签和设置</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选的全局标签和设置，跨库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将库导入到其他程序或从其他程序导出</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">移植到性能更高的语言和现代前端（Rust？、Tauri？等）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件系统</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地 OCR 搜索</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持基于本地机器学习的图像标签建议</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手机版</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我可能不会添加/删除的功能</font></font></h4><a id="user-content-features-i-likely-wont-addpull" class="anchor" aria-label="永久链接：我可能不会添加/删除的功能" href="#features-i-likely-wont-addpull"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">原生云集成
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已经有很多服务（本机或第三方）允许您将云驱动器作为虚拟驱动器安装在系统上。将 TagStudio 指向这些安装之一的功能应该与本机集成类似。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本机 ChatGPT/非本地 LLM 集成
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您的意图，这可能意味着不同的事情。无论是尝试使用LLM来取代本地搜索，还是尝试使用模型进行图像识别，我都不感兴趣将人们的TagStudio库挂接到非本地LLM（例如ChatGPT）和/或将程序变成“聊天机器人”界面（参见：</font></font><a href="#goals"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目标/隐私</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。但是，我不介意使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">托管模型来提供额外搜索和标记方法的</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能（特别是在面部识别方面）。</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么版本已经是v9了？</font></font></h3><a id="user-content-why-is-the-version-already-v9" class="anchor" aria-label="永久链接：为什么版本已经是 v9 了？" href="#why-is-the-version-already-v9"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我私下开发这个项目已经有好几年了，期间经历了几次重大的迭代和重写。这个“主要版本”最终只是一个数字，如果我愿意的话，我不能将其发布为“版本 0”或“版本 1.0”，但我决定坚持使用原来的版本号以避免需要进入并更改现有文档和代码注释。版本 10 旨在包含我在</font></font><a href="#what-features-are-you-planning-on-adding"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上一</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">节中概述的所有“优先功能”。我还将此版本标记为 Alpha，并且当达到功能完整的测试版时可能会重置数字。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等等，有 CLI 版本吗？</font></font></h3><a id="user-content-wait-is-there-a-cli-version" class="anchor" aria-label="永久链接：等等，有 CLI 版本吗？" href="#wait-is-there-a-cli-version"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截至目前，没有。然而，</font><font style="vertical-align: inherit;">在致力于 Qt GUI 版本之前，我最近确实有一个 CLI 版本</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我保留了当前无法操作的 CLI 代码，以防万一有人对此感到好奇。也是的，这只是一堆美化的打印语句（</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当时 Windows 上某种形式的诅咒的前景看起来不太好，我只需要一个用于新重构的代码的驱动程序......）。</font></font></em></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我可以贡献吗？</font></font></h3><a id="user-content-can-i-contribute" class="anchor" aria-label="永久链接：我可以贡献吗？" href="#can-i-contribute"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是的！！</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我建议查看</font></font><a href="#priority-features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“优先功能”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="#future-features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“未来功能”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="#features-i-likely-wont-addpull"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“我不会拉动的功能”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列表，以及项目问题，以了解当前正在处理的内容。请不要在未先提出功能请求问题的情况下提交包含新功能添加的拉取请求。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截至撰写本文时，我还没有具体的风格指南，只是尝试保持在 PEP 8 风格指南内或足够接近 PEP 8 风格指南和/或匹配现有代码的风格。</font></font></p>
+</article></div>
